@@ -28,16 +28,16 @@ bindsym $mod+d layout toggle split
 # Enable touchpad natural scrolling
 #exec_always --no-startup-id xinput set-prop "DELL07E6:00 06CB:76AF Touchpad" "libinput Natural Scrolling Enabled" 1
 
-bindsym $mod+Shift+Return exec gnome-terminal
-bindsym $mod+Shift+w exec google-chrome-stable
-bindsym $mod+Shift+f exec gnome-terminal -e ranger
+bindsym $mod+Shift+Return exec alacritty
+bindsym $mod+Shift+w exec firefox
+bindsym $mod+Shift+f exec alacritty -e ranger
 bindsym $mod+Shift+e exec leafpad
 
 bindsym $mod+space --release exec "rofi -combi-modi drun,window,ssh -show combi -modi combi"
 bindsym $mod+q kill
 
 bindsym $mod+Ctrl+p exec pavucontrol
-bindsym $mod+Ctrl+b exec gnome-terminal -e 'bmenu'
+bindsym $mod+Ctrl+b exec alacritty -e 'bmenu'
 bindsym $mod+Print --release exec --no-startup-id flameshot gui
 
 # Autostart applications
